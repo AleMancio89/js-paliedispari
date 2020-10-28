@@ -2,15 +2,15 @@ var input = prompt('Inserisci una parola per verificare che sia un palindromo');
 
 //Definisco la funzione per stabilire palindromo true o false
 
-function isPalindrome(input) {
-  var stringLowCase = input.toLowerCase(); // Riduco tutte le lettere in minuscolo per la comparazione
+function isPalindrome(word) {
+  var stringLowCase = word.toLowerCase(); // Riduco tutte le lettere in minuscolo per la comparazione
 
   for (var i = 0; i < stringLowCase.length; i++){
 
     if (stringLowCase[i] != stringLowCase[stringLowCase.length - 1 - i]) {
     return false;
     }
-    
+
   }
 
   return true;

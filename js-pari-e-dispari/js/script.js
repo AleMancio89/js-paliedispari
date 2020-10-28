@@ -19,12 +19,7 @@ somma += computerRandomNumber();
 //Funzione per stabilire se la somma dei due numeri è pari
 
 function isEven() {
-  var even = false;
-  if (somma % 2 == 0){
-    return true;
-  }
-
-  return even
+  return somma % 2 == 0;  
 }
 
 //Condizioni per stabilire la vittoria
